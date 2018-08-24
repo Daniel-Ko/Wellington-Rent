@@ -1,0 +1,661 @@
+Table,Year,Sex,IncomeCode,IncomeDescription,Mean,MeanFlag,MeanRse,Median,MedianFlag,MedianRse
+T3,2007,11,10,0wages and salaries,43607,,5.5,40046,,3.9
+T3,2007,11,11,1self-employment,44805,*,23.6,33480,,12.2
+T3,2007,11,12,2investments,6187,*,28.1,1175,*,23.4
+T3,2007,11,13,3private superannuation,21365,*,25.3,17095,,11.6
+T3,2007,11,14,4New Zealand Superannuation and war pensions,12682,,3.3,12393,,1.6
+T3,2007,11,15,5Other government benefits,6954,,11.5,6162,,15.1
+T3,2007,11,16,6Other regular sources,9997,*,31.2,2630,*,40
+T3,2007,11,17,7Total regular and recurring income,42532,,6,35614,,5.4
+T3,2007,11,18,8Total irregular Income,13332,*,37.2,3623,*,26.3
+T3,2007,11,19,9Total income all sources,43003,,5.9,36000,,5.3
+T3,2007,12,10,0wages and salaries,30265,,5.2,26071,,6.1
+T3,2007,12,11,1self-employment,22261,*,23.9,13237,*,23.7
+T3,2007,12,12,2investments,5513,*,23.4,921,*,21.4
+T3,2007,12,13,3private superannuation,11226,*,34.9,8379,*,22.3
+T3,2007,12,14,4New Zealand Superannuation and war pensions,13290,,3.4,12639,,1.1
+T3,2007,12,15,5Other government benefits,9165,,9.2,6240,,18.2
+T3,2007,12,16,6Other regular sources,8450,*,25.4,3000,*,30.4
+T3,2007,12,17,7Total regular and recurring income,29244,,4,22880,,4.5
+T3,2007,12,18,8Total irregular Income,14953,*,36.4,2166,**,55.2
+T3,2007,12,19,9Total income all sources,29998,,4.3,23265,,4.5
+T3,2007,13,10,0wages and salaries,36816,,4.3,33000,,4.2
+T3,2007,13,11,1self-employment,37608,,19.8,25000,,17.3
+T3,2007,13,12,2investments,5843,,18.8,1000,,20.1
+T3,2007,13,13,3private superannuation,17981,*,22.2,13982,,17.8
+T3,2007,13,14,4New Zealand Superannuation and war pensions,13028,,2.7,12484,,1
+T3,2007,13,15,5Other government benefits,8403,,7,6209,,13.1
+T3,2007,13,16,6Other regular sources,9142,*,24.7,2877,*,24.1
+T3,2007,13,17,7Total regular and recurring income,35719,,4,28323,,4.2
+T3,2007,13,18,8Total irregular Income,14328,*,28.8,2630,*,36.3
+T3,2007,13,19,9Total income all sources,36327,,4,28714,,4.2
+T4,2007,11,10,0wages and salaries,27247,,6.2,17729,*,33.5
+T4,2007,11,11,1self-employment,6656,*,30,0,,
+T4,2007,11,12,2investments,1774,*,30.4,0,,
+T4,2007,11,13,3private superannuation,546,*,34.3,0,,
+T4,2007,11,14,4New Zealand Superannuation and war pensions,1641,,5.8,0,,
+T4,2007,11,15,5Other government benefits,1036,*,21.1,0,,
+T4,2007,11,16,6Other regular sources,1037,*,35.5,0,,
+T4,2007,11,17,7Total regular and recurring income,39937,,5.8,33000,,5.7
+T4,2007,11,18,8Total irregular Income,472,*,42.4,0,,
+T4,2007,11,19,9Total income all sources,40409,,5.8,33282,,6
+T4,2007,12,10,0wages and salaries,18343,,6,6857,*,23.7
+T4,2007,12,11,1self-employment,1451,*,28.5,0,,
+T4,2007,12,12,2investments,1539,*,24,0,,
+T4,2007,12,13,3private superannuation,134,*,46.7,0,,
+T4,2007,12,14,4New Zealand Superannuation and war pensions,2125,,5.5,0,,
+T4,2007,12,15,5Other government benefits,2429,,10.9,0,,
+T4,2007,12,16,6Other regular sources,1013,*,29.8,0,,
+T4,2007,12,17,7Total regular and recurring income,27033,,4,20630,,5.8
+T4,2007,12,18,8Total irregular Income,790,*,40.2,0,,
+T4,2007,12,19,9Total income all sources,27823,,4.3,21107,,5.7
+T4,2007,13,10,0wages and salaries,22647,,4.7,9386,,20.8
+T4,2007,13,11,1self-employment,3967,*,25.1,0,,
+T4,2007,13,12,2investments,1652,,20.7,0,,
+T4,2007,13,13,3private superannuation,333,*,28.4,0,,
+T4,2007,13,14,4New Zealand Superannuation and war pensions,1891,,4.5,0,,
+T4,2007,13,15,5Other government benefits,1756,,11.4,0,,
+T4,2007,13,16,6Other regular sources,1025,*,29,0,,
+T4,2007,13,17,7Total regular and recurring income,33271,,3.9,25798,,4.8
+T4,2007,13,18,8Total irregular Income,636,*,33.4,0,,
+T4,2007,13,19,9Total income all sources,33907,,3.8,26107,,4.8
+T3,2008,11,10,0wages and salaries,45836,,4.1,41080,,3.1
+T3,2008,11,11,1self-employment,47164,,14,35000,,10.4
+T3,2008,11,12,2investments,7791,*,24.3,1052,,18.8
+T3,2008,11,13,3private superannuation,24216,*,38.1,15158,,11.1
+T3,2008,11,14,4New Zealand Superannuation and war pensions,13706,,3.3,13296,,1.1
+T3,2008,11,15,5Other government benefits,7014,,10.8,4836,,15.8
+T3,2008,11,16,6Other regular sources,13237,*,28.2,2723,*,26.2
+T3,2008,11,17,7Total regular and recurring income,46688,,4.6,37329,,3.9
+T3,2008,11,18,8Total irregular Income,23187,*,42.7,4603,*,25.8
+T3,2008,11,19,9Total income all sources,47569,,4.8,37543,,4.4
+T3,2008,12,10,0wages and salaries,31039,,4.3,28679,,4.7
+T3,2008,12,11,1self-employment,28535,*,24.2,19900,*,22.4
+T3,2008,12,12,2investments,5783,,17.5,963,,17
+T3,2008,12,13,3private superannuation,16517,*,45.8,11486,,17.9
+T3,2008,12,14,4New Zealand Superannuation and war pensions,14585,,2,13766,,4.5
+T3,2008,12,15,5Other government benefits,9493,,7.8,6474,,11.5
+T3,2008,12,16,6Other regular sources,7786,*,27.8,2000,*,21.6
+T3,2008,12,17,7Total regular and recurring income,30849,,4.2,24194,,4.2
+T3,2008,12,18,8Total irregular Income,28926,*,41.6,3419,*,48.3
+T3,2008,12,19,9Total income all sources,31986,,4.5,24445,,4.5
+T3,2008,13,10,0wages and salaries,38541,,3.2,34675,,3
+T3,2008,13,11,1self-employment,39980,,13.7,28000,,10.8
+T3,2008,13,12,2investments,6752,,17.4,1000,,16.2
+T3,2008,13,13,3private superannuation,21900,*,32.8,13741,,8.7
+T3,2008,13,14,4New Zealand Superannuation and war pensions,14194,,2.1,13296,,1.1
+T3,2008,13,15,5Other government benefits,8661,,6.8,5824,,10.9
+T3,2008,13,16,6Other regular sources,10227,*,23.5,2357,,16.4
+T3,2008,13,17,7Total regular and recurring income,38584,,3.6,30317,,2.7
+T3,2008,13,18,8Total irregular Income,26280,*,27.6,3945,*,31.7
+T3,2008,13,19,9Total income all sources,39584,,3.8,30590,,2.7
+T4,2008,11,10,0wages and salaries,29493,,4.9,22685,,15.6
+T4,2008,11,11,1self-employment,7128,,15.8,0,,
+T4,2008,11,12,2investments,2546,*,24,0,,
+T4,2008,11,13,3private superannuation,641,*,47.7,0,,
+T4,2008,11,14,4New Zealand Superannuation and war pensions,1832,,5,0,,
+T4,2008,11,15,5Other government benefits,1002,,16.3,0,,
+T4,2008,11,16,6Other regular sources,1552,*,32.6,0,,
+T4,2008,11,17,7Total regular and recurring income,44193,,4.7,35400,,3.6
+T4,2008,11,18,8Total irregular Income,849,*,46.3,0,,
+T4,2008,11,19,9Total income all sources,45043,,5,35726,,3.8
+T4,2008,12,10,0wages and salaries,18154,,5.9,6883,*,28.7
+T4,2008,12,11,1self-employment,2530,*,26.7,0,,
+T4,2008,12,12,2investments,1896,,18.3,0,,
+T4,2008,12,13,3private superannuation,176,**,53.8,0,,
+T4,2008,12,14,4New Zealand Superannuation and war pensions,2274,,3.2,0,,
+T4,2008,12,15,5Other government benefits,2508,,10.6,0,,
+T4,2008,12,16,6Other regular sources,1052,*,28.9,0,,
+T4,2008,12,17,7Total regular and recurring income,28591,,4.2,21822,,5.6
+T4,2008,12,18,8Total irregular Income,1158,*,46.3,0,,
+T4,2008,12,19,9Total income all sources,29749,,4.5,22135,,5.6
+T4,2008,13,10,0wages and salaries,23632,,3.9,11126,,15
+T4,2008,13,11,1self-employment,4751,,15.8,0,,
+T4,2008,13,12,2investments,2210,,17.5,0,,
+T4,2008,13,13,3private superannuation,401,*,39,0,,
+T4,2008,13,14,4New Zealand Superannuation and war pensions,2061,,3,0,,
+T4,2008,13,15,5Other government benefits,1781,,8.7,0,,
+T4,2008,13,16,6Other regular sources,1294,*,25.2,0,,
+T4,2008,13,17,7Total regular and recurring income,36129,,3.7,28157,,3.8
+T4,2008,13,18,8Total irregular Income,1009,*,33.5,0,,
+T4,2008,13,19,9Total income all sources,37137,,3.8,28623,,3.9
+T3,2009,11,10,0wages and salaries,48082,,3.8,42705,,4.3
+T3,2009,11,11,1self-employment,56896,,14.5,38000,,10.2
+T3,2009,11,12,2investments,8039,*,29.2,1219,*,21.4
+T3,2009,11,13,3private superannuation,20053,,18.2,19474,,16.8
+T3,2009,11,14,4New Zealand Superannuation and war pensions,14109,,3.2,14041,,1.3
+T3,2009,11,15,5Other government benefits,7962,,10.1,6572,,19.4
+T3,2009,11,16,6Other regular sources,13339,*,40,2549,*,23.2
+T3,2009,11,17,7Total regular and recurring income,49610,,5.3,39505,,3.4
+T3,2009,11,18,8Total irregular Income,25311,**,69.4,2630,**,52.8
+T3,2009,11,19,9Total income all sources,50775,,5.8,39766,,3.4
+T3,2009,12,10,0wages and salaries,33384,,4.3,30113,,4.4
+T3,2009,12,11,1self-employment,28597,*,26.6,19523,*,22.8
+T3,2009,12,12,2investments,5148,,13.3,1000,,19.6
+T3,2009,12,13,3private superannuation,11656,*,29.8,9402,,18.6
+T3,2009,12,14,4New Zealand Superannuation and war pensions,15097,,2.3,14602,,3.9
+T3,2009,12,15,5Other government benefits,9084,,7.7,6448,,10.6
+T3,2009,12,16,6Other regular sources,9717,*,32.8,2600,*,29.9
+T3,2009,12,17,7Total regular and recurring income,31891,,3.8,26028,,4.2
+T3,2009,12,18,8Total irregular Income,13074,*,32.2,3025,*,30.5
+T3,2009,12,19,9Total income all sources,32516,,3.7,26175,,4.8
+T3,2009,13,10,0wages and salaries,40808,,3.1,36500,,3
+T3,2009,13,11,1self-employment,46756,,13.9,29918,,11.5
+T3,2009,13,12,2investments,6557,,20.2,1032,,19.3
+T3,2009,13,13,3private superannuation,17117,,16,14531,,9
+T3,2009,13,14,4New Zealand Superannuation and war pensions,14655,,2,14125,,0.1
+T3,2009,13,15,5Other government benefits,8728,,6.7,6474,,11
+T3,2009,13,16,6Other regular sources,11283,*,28.8,2551,*,22
+T3,2009,13,17,7Total regular and recurring income,40485,,3.8,32085,,2.9
+T3,2009,13,18,8Total irregular Income,18755,*,47.1,3000,*,39
+T3,2009,13,19,9Total income all sources,41368,,4.1,32282,,3.2
+T4,2009,11,10,0wages and salaries,29959,,5.3,21691,*,24.8
+T4,2009,11,11,1self-employment,8412,,18.3,0,,
+T4,2009,11,12,2investments,2901,*,29.9,0,,
+T4,2009,11,13,3private superannuation,539,*,32.6,0,,
+T4,2009,11,14,4New Zealand Superannuation and war pensions,1967,,5.3,0,,
+T4,2009,11,15,5Other government benefits,1115,,16.9,0,,
+T4,2009,11,16,6Other regular sources,1625,*,43.4,0,,
+T4,2009,11,17,7Total regular and recurring income,46518,,5.4,37353,,4.5
+T4,2009,11,18,8Total irregular Income,1148,**,72.7,0,,
+T4,2009,11,19,9Total income all sources,47666,,5.9,37543,,4.4
+T4,2009,12,10,0wages and salaries,19035,,5.8,5906,*,32.1
+T4,2009,12,11,1self-employment,2205,*,29.5,0,,
+T4,2009,12,12,2investments,1825,,14.6,0,,
+T4,2009,12,13,3private superannuation,157,*,40,0,,
+T4,2009,12,14,4New Zealand Superannuation and war pensions,2424,,3.6,0,,
+T4,2009,12,15,5Other government benefits,2554,,9.1,0,,
+T4,2009,12,16,6Other regular sources,1451,*,31.8,0,,
+T4,2009,12,17,7Total regular and recurring income,29652,,4.1,23952,,4.5
+T4,2009,12,18,8Total irregular Income,639,*,37,0,,
+T4,2009,12,19,9Total income all sources,30291,,4,24000,,4.5
+T4,2009,13,10,0wages and salaries,24310,,4.3,10695,*,21
+T4,2009,13,11,1self-employment,5203,,16.9,0,,
+T4,2009,13,12,2investments,2344,,20.7,0,,
+T4,2009,13,13,3private superannuation,342,*,26.2,0,,
+T4,2009,13,14,4New Zealand Superannuation and war pensions,2203,,3,0,,
+T4,2009,13,15,5Other government benefits,1859,,9.5,0,,
+T4,2009,13,16,6Other regular sources,1535,*,29.5,0,,
+T4,2009,13,17,7Total regular and recurring income,37796,,3.8,29870,,3.6
+T4,2009,13,18,8Total irregular Income,885,*,47.3,0,,
+T4,2009,13,19,9Total income all sources,38681,,4.1,30000,,3.8
+T3,2010,11,10,0wages and salaries,49784,,5.5,42247,,3.6
+T3,2010,11,11,1self-employment,44450,,16.7,34904,,14.1
+T3,2010,11,12,2investments,6749,*,21.9,1056,*,21.6
+T3,2010,11,13,3private superannuation,24317,*,35.7,17646,,16.5
+T3,2010,11,14,4New Zealand Superannuation and war pensions,14279,,3,14216,,0.3
+T3,2010,11,15,5Other government benefits,7894,,10.1,6221,,15.6
+T3,2010,11,16,6Other regular sources,12493,*,34.8,2000,,19.5
+T3,2010,11,17,7Total regular and recurring income,47042,,5,38012,,5
+T3,2010,11,18,8Total irregular Income,23105,**,59,2367,*,38.1
+T3,2010,11,19,9Total income all sources,48137,,5.1,38374,,4.7
+T3,2010,12,10,0wages and salaries,33786,,4.1,30869,,5.4
+T3,2010,12,11,1self-employment,29564,*,25.7,16686,,20.4
+T3,2010,12,12,2investments,5291,,16.3,789,,20.2
+T3,2010,12,13,3private superannuation,12367,*,22.1,12069,,14.4
+T3,2010,12,14,4New Zealand Superannuation and war pensions,15434,,2.7,14265,,1.2
+T3,2010,12,15,5Other government benefits,10150,,7.3,7488,,9.3
+T3,2010,12,16,6Other regular sources,7913,*,23,1500,*,32.7
+T3,2010,12,17,7Total regular and recurring income,32479,,3.6,26293,,4.4
+T3,2010,12,18,8Total irregular Income,18651,*,48.7,2600,*,29.1
+T3,2010,12,19,9Total income all sources,33647,,3.9,26963,,4.5
+T3,2010,13,10,0wages and salaries,41776,,4,36902,,3.5
+T3,2010,13,11,1self-employment,39112,,16.6,26071,,15.1
+T3,2010,13,12,2investments,6007,,15.8,921,,16.4
+T3,2010,13,13,3private superannuation,19953,*,25.4,14351,,13.8
+T3,2010,13,14,4New Zealand Superannuation and war pensions,14908,,2.2,14229,,0
+T3,2010,13,15,5Other government benefits,9340,,6.1,7146,,9.5
+T3,2010,13,16,6Other regular sources,9942,*,23.1,2000,,18.9
+T3,2010,13,17,7Total regular and recurring income,39585,,3.7,30643,,3.7
+T3,2010,13,18,8Total irregular Income,20558,*,39.6,2499,*,26.5
+T3,2010,13,19,9Total income all sources,40719,,3.7,31065,,3.7
+T4,2010,11,10,0wages and salaries,30801,,6.8,17207,*,27.6
+T4,2010,11,11,1self-employment,5761,,19.4,0,,
+T4,2010,11,12,2investments,2247,*,21.9,0,,
+T4,2010,11,13,3private superannuation,556,*,44.4,0,,
+T4,2010,11,14,4New Zealand Superannuation and war pensions,2039,,4.5,0,,
+T4,2010,11,15,5Other government benefits,1376,,15.9,0,,
+T4,2010,11,16,6Other regular sources,1607,*,38.1,0,,
+T4,2010,11,17,7Total regular and recurring income,44387,,5.1,35446,,6
+T4,2010,11,18,8Total irregular Income,1112,**,68.3,0,,
+T4,2010,11,19,9Total income all sources,45499,,5.1,35457,,6.2
+T4,2010,12,10,0wages and salaries,19561,,5.1,6674,*,35.1
+T4,2010,12,11,1self-employment,2000,*,31.7,0,,
+T4,2010,12,12,2investments,1705,,18.5,0,,
+T4,2010,12,13,3private superannuation,152,*,42.3,0,,
+T4,2010,12,14,4New Zealand Superannuation and war pensions,2464,,4.3,0,,
+T4,2010,12,15,5Other government benefits,2949,,10.2,0,,
+T4,2010,12,16,6Other regular sources,1194,*,24.9,0,,
+T4,2010,12,17,7Total regular and recurring income,30025,,3.6,24000,,5.5
+T4,2010,12,18,8Total irregular Income,1120,*,49.4,0,,
+T4,2010,12,19,9Total income all sources,31145,,3.9,24767,,5.4
+T4,2010,13,10,0wages and salaries,24988,,5,10000,*,22.2
+T4,2010,13,11,1self-employment,3816,,19.4,0,,
+T4,2010,13,12,2investments,1967,,16.4,0,,
+T4,2010,13,13,3private superannuation,347,*,37.7,0,,
+T4,2010,13,14,4New Zealand Superannuation and war pensions,2259,,3.4,0,,
+T4,2010,13,15,5Other government benefits,2189,,10,0,,
+T4,2010,13,16,6Other regular sources,1394,*,25.9,0,,
+T4,2010,13,17,7Total regular and recurring income,36960,,3.7,28410,,3.5
+T4,2010,13,18,8Total irregular Income,1116,*,40.9,0,,
+T4,2010,13,19,9Total income all sources,38076,,3.7,28908,,3.8
+T3,2011,11,10,0wages and salaries,50550,,4.9,43429,,4.7
+T3,2011,11,11,1self-employment,47616,,16.6,34110,,15.5
+T3,2011,11,12,2investments,7112,*,31.8,789,*,21.1
+T3,2011,11,13,3private superannuation,23470,,19.9,18894,,12.9
+T3,2011,11,14,4New Zealand Superannuation and war pensions,14771,,2.8,14592,,0.6
+T3,2011,11,15,5Other government benefits,7573,,9.8,6240,,17.1
+T3,2011,11,16,6Other regular sources,8997,*,28.2,1715,,18.4
+T3,2011,11,17,7Total regular and recurring income,48479,,5.3,38000,,4.3
+T3,2011,11,18,8Total irregular Income,30891,**,75.8,4000,*,34.1
+T3,2011,11,19,9Total income all sources,49657,,5.7,38534,,4.1
+T3,2011,12,10,0wages and salaries,36160,,4.3,31872,,5.1
+T3,2011,12,11,1self-employment,27181,*,30.7,20836,,19.1
+T3,2011,12,12,2investments,6538,*,24.5,792,*,22.7
+T3,2011,12,13,3private superannuation,16760,*,31.5,11757,,16.9
+T3,2011,12,14,4New Zealand Superannuation and war pensions,15771,,2.5,15082,,1.1
+T3,2011,12,15,5Other government benefits,10400,,5.7,7493,,11
+T3,2011,12,16,6Other regular sources,10812,*,39.8,2500,*,26.2
+T3,2011,12,17,7Total regular and recurring income,34054,,5.2,26766,,4.2
+T3,2011,12,18,8Total irregular Income,28179,**,52.5,3288,*,35.4
+T3,2011,12,19,9Total income all sources,35223,,5.3,27076,,4.2
+T3,2011,13,10,0wages and salaries,43350,,3.5,37482,,3.3
+T3,2011,13,11,1self-employment,41064,,16.6,29629,,10.6
+T3,2011,13,12,2investments,6815,*,22.3,789,,20.9
+T3,2011,13,13,3private superannuation,21113,,17.6,16830,,17.1
+T3,2011,13,14,4New Zealand Superannuation and war pensions,15315,,2.1,15053,,1.5
+T3,2011,13,15,5Other government benefits,9380,,4.9,6970,,10
+T3,2011,13,16,6Other regular sources,9958,*,28.9,2000,*,24.9
+T3,2011,13,17,7Total regular and recurring income,41047,,4.2,31499,,3.4
+T3,2011,13,18,8Total irregular Income,29469,*,47.9,3600,*,37.4
+T3,2011,13,19,9Total income all sources,42223,,4.6,31855,,3.6
+T4,2011,11,10,0wages and salaries,30314,,5.8,15956,*,24.3
+T4,2011,11,11,1self-employment,7455,*,21.3,0,,
+T4,2011,11,12,2investments,2227,*,32.6,0,,
+T4,2011,11,13,3private superannuation,590,*,28,0,,
+T4,2011,11,14,4New Zealand Superannuation and war pensions,2182,,5.7,0,,
+T4,2011,11,15,5Other government benefits,1375,,16.3,0,,
+T4,2011,11,16,6Other regular sources,1142,*,32.5,0,,
+T4,2011,11,17,7Total regular and recurring income,45286,,5.3,35457,,4.4
+T4,2011,11,18,8Total irregular Income,1196,**,85.5,0,,
+T4,2011,11,19,9Total income all sources,46482,,5.7,35882,,4.4
+T4,2011,12,10,0wages and salaries,20266,,5.6,4954,*,40
+T4,2011,12,11,1self-employment,1874,*,32.7,0,,
+T4,2011,12,12,2investments,2046,*,24,0,,
+T4,2011,12,13,3private superannuation,213,*,46.8,0,,
+T4,2011,12,14,4New Zealand Superannuation and war pensions,2587,,3.3,0,,
+T4,2011,12,15,5Other government benefits,3122,,7.9,0,,
+T4,2011,12,16,6Other regular sources,1442,*,42.5,0,,
+T4,2011,12,17,7Total regular and recurring income,31549,,5.1,24195,,6.1
+T4,2011,12,18,8Total irregular Income,1122,*,49,0,,
+T4,2011,12,19,9Total income all sources,32671,,5.3,24521,,5.7
+T4,2011,13,10,0wages and salaries,25116,,4.2,8447,*,23.8
+T4,2011,13,11,1self-employment,4568,,20.6,0,,
+T4,2011,13,12,2investments,2133,*,22.1,0,,
+T4,2011,13,13,3private superannuation,395,*,26.5,0,,
+T4,2011,13,14,4New Zealand Superannuation and war pensions,2391,,3.2,0,,
+T4,2011,13,15,5Other government benefits,2278,,7.7,0,,
+T4,2011,13,16,6Other regular sources,1297,*,33.8,0,,
+T4,2011,13,17,7Total regular and recurring income,38180,,4.2,28991,,3.5
+T4,2011,13,18,8Total irregular Income,1158,**,53.9,0,,
+T4,2011,13,19,9Total income all sources,39338,,4.5,29200,,3.6
+T3,2012,11,10,0wages and salaries,54430,,3.9,46735,,4.2
+T3,2012,11,11,1self-employment,48744,,20.4,33893,,10.5
+T3,2012,11,12,2investments,5542,*,21.4,916,*,23.4
+T3,2012,11,13,3private superannuation,23678,*,35.1,15231,,12
+T3,2012,11,14,4New Zealand Superannuation and war pensions,15466,,2.8,15405,,0.1
+T3,2012,11,15,5Other government benefits,7878,,9,6702,,20.5
+T3,2012,11,16,6Other regular sources,10975,*,24.7,2117,,16.9
+T3,2012,11,17,7Total regular and recurring income,50045,,4.5,38857,,3.3
+T3,2012,11,18,8Total irregular Income,19729,*,46.8,3000,*,44.5
+T3,2012,11,19,9Total income all sources,50804,,4.5,39107,,3.5
+T3,2012,12,10,0wages and salaries,36115,,3.7,32000,,5.1
+T3,2012,12,11,1self-employment,29854,,20,21000,*,28.8
+T3,2012,12,12,2investments,5425,*,22.1,698,*,21.6
+T3,2012,12,13,3private superannuation,12008,*,37.9,8452,,2.6
+T3,2012,12,14,4New Zealand Superannuation and war pensions,17000,,2.7,15813,,2.6
+T3,2012,12,15,5Other government benefits,10090,,7.1,7652,,9.8
+T3,2012,12,16,6Other regular sources,8097,*,22.4,1800,*,31.3
+T3,2012,12,17,7Total regular and recurring income,33654,,3.4,26359,,4
+T3,2012,12,18,8Total irregular Income,23333,*,43,4000,*,24.6
+T3,2012,12,19,9Total income all sources,34791,,3.4,26692,,4.6
+T3,2012,13,10,0wages and salaries,45385,,2.7,39500,,2.5
+T3,2012,13,11,1self-employment,41356,,17.5,29146,,15.3
+T3,2012,13,12,2investments,5481,,15.8,763,,17.5
+T3,2012,13,13,3private superannuation,18927,*,29.8,12720,,17.4
+T3,2012,13,14,4New Zealand Superannuation and war pensions,16296,,2,15405,,0.1
+T3,2012,13,15,5Other government benefits,9308,,6,7470,,9.6
+T3,2012,13,16,6Other regular sources,9469,,17,2000,,18.4
+T3,2012,13,17,7Total regular and recurring income,41627,,3,32275,,3.5
+T3,2012,13,18,8Total irregular Income,21672,*,32.8,3816,*,29.6
+T3,2012,13,19,9Total income all sources,42586,,3,32686,,3.8
+T4,2012,11,10,0wages and salaries,33474,,4.4,21742,*,21.1
+T4,2012,11,11,1self-employment,6325,*,23.7,0,,
+T4,2012,11,12,2investments,1730,*,22.9,0,,
+T4,2012,11,13,3private superannuation,495,*,42.3,0,,
+T4,2012,11,14,4New Zealand Superannuation and war pensions,2319,,4.4,0,,
+T4,2012,11,15,5Other government benefits,1322,,12.4,0,,
+T4,2012,11,16,6Other regular sources,1393,*,27.1,0,,
+T4,2012,11,17,7Total regular and recurring income,47059,,4.4,36952,,4
+T4,2012,11,18,8Total irregular Income,857,*,47.7,0,,
+T4,2012,11,19,9Total income all sources,47916,,4.5,37407,,4
+T4,2012,12,10,0wages and salaries,20214,,4.9,5786,*,36.7
+T4,2012,12,11,1self-employment,2321,*,23.2,0,,
+T4,2012,12,12,2investments,1721,*,22.4,0,,
+T4,2012,12,13,3private superannuation,161,*,40.9,0,,
+T4,2012,12,14,4New Zealand Superannuation and war pensions,2802,,3.9,0,,
+T4,2012,12,15,5Other government benefits,2891,,8.4,0,,
+T4,2012,12,16,6Other regular sources,1053,*,27.8,0,,
+T4,2012,12,17,7Total regular and recurring income,31162,,3.7,24194,,4
+T4,2012,12,18,8Total irregular Income,1107,*,47.3,0,,
+T4,2012,12,19,9Total income all sources,32269,,3.8,24627,,4.1
+T4,2012,13,10,0wages and salaries,26613,,3.2,10981,*,21.7
+T4,2012,13,11,1self-employment,4253,,20.4,0,,
+T4,2012,13,12,2investments,1725,,16.5,0,,
+T4,2012,13,13,3private superannuation,322,*,34.1,0,,
+T4,2012,13,14,4New Zealand Superannuation and war pensions,2569,,3,0,,
+T4,2012,13,15,5Other government benefits,2134,,7.3,0,,
+T4,2012,13,16,6Other regular sources,1217,,20.6,0,,
+T4,2012,13,17,7Total regular and recurring income,38834,,3,29863,,4.1
+T4,2012,13,18,8Total irregular Income,986,*,34.5,0,,
+T4,2012,13,19,9Total income all sources,39820,,3.1,30148,,4
+T3,2013,11,10,0wages and salaries,56725,,5.9,49101,,4
+T3,2013,11,11,1self-employment,49836,,18,34000,,9.8
+T3,2013,11,12,2investments,7081,*,22.6,874,*,26.4
+T3,2013,11,13,3private superannuation,23064,,19.7,19544,*,23.5
+T3,2013,11,14,4New Zealand Superannuation and war pensions,15560,,3.2,15813,,0.3
+T3,2013,11,15,5Other government benefits,8328,,10.9,6970,,15.3
+T3,2013,11,16,6Other regular sources,8585,*,35,1872,*,39.3
+T3,2013,11,17,7Total regular and recurring income,53225,,5.4,43591,,5.8
+T3,2013,11,18,8Total irregular Income,16646,*,49.5,1873,**,65.9
+T3,2013,11,19,9Total income all sources,53624,,5.4,43474,,5.8
+T3,2013,12,10,0wages and salaries,39207,,4.4,35012,,6.3
+T3,2013,12,11,1self-employment,33953,*,29,20000,,14.4
+T3,2013,12,12,2investments,6393,*,22.8,900,*,26.6
+T3,2013,12,13,3private superannuation,14355,,20.1,11691,,6.1
+T3,2013,12,14,4New Zealand Superannuation and war pensions,16743,,2.6,16120,,1.2
+T3,2013,12,15,5Other government benefits,11228,,6.9,8528,,11.7
+T3,2013,12,16,6Other regular sources,8400,*,31.8,2000,*,26.7
+T3,2013,12,17,7Total regular and recurring income,36337,,4.1,28202,,5.5
+T3,2013,12,18,8Total irregular Income,36877,**,87.3,3747,**,54.3
+T3,2013,12,19,9Total income all sources,38040,,5.5,28345,,5.7
+T3,2013,13,10,0wages and salaries,48087,,4.3,42220,,3.6
+T3,2013,13,11,1self-employment,44312,,17.1,28244,,9
+T3,2013,13,12,2investments,6725,,18.2,874,,20.3
+T3,2013,13,13,3private superannuation,19440,,15.7,14577,,16.2
+T3,2013,13,14,4New Zealand Superannuation and war pensions,16209,,2.2,15813,,0.3
+T3,2013,13,15,5Other government benefits,10339,,6.6,8092,,8.3
+T3,2013,13,16,6Other regular sources,8482,*,22.9,1926,*,27.9
+T3,2013,13,17,7Total regular and recurring income,44487,,3.8,34571,,4.4
+T3,2013,13,18,8Total irregular Income,28381,**,66.7,3000,**,60.5
+T3,2013,13,19,9Total income all sources,45572,,4.2,34929,,4.3
+T4,2013,11,10,0wages and salaries,34841,,6.4,23464,*,25.9
+T4,2013,11,11,1self-employment,7055,*,21.9,0,,
+T4,2013,11,12,2investments,2093,*,24.5,0,,
+T4,2013,11,13,3private superannuation,596,*,35.1,0,,
+T4,2013,11,14,4New Zealand Superannuation and war pensions,2392,,4.4,0,,
+T4,2013,11,15,5Other government benefits,1082,,18.8,0,,
+T4,2013,11,16,6Other regular sources,945,*,39.2,0,,
+T4,2013,11,17,7Total regular and recurring income,49003,,5.3,39629,,6.9
+T4,2013,11,18,8Total irregular Income,563,*,44.7,0,,
+T4,2013,11,19,9Total income all sources,49566,,5.2,39629,,6.9
+T4,2013,12,10,0wages and salaries,21845,,5.3,6049,*,40.5
+T4,2013,12,11,1self-employment,2390,*,34.3,0,,
+T4,2013,12,12,2investments,1894,*,23,0,,
+T4,2013,12,13,3private superannuation,246,*,32.2,0,,
+T4,2013,12,14,4New Zealand Superannuation and war pensions,2914,,3.9,0,,
+T4,2013,12,15,5Other government benefits,3077,,9.9,0,,
+T4,2013,12,16,6Other regular sources,1081,*,35.2,0,,
+T4,2013,12,17,7Total regular and recurring income,33448,,4.2,25187,,4.4
+T4,2013,12,18,8Total irregular Income,1608,**,86.2,0,,
+T4,2013,12,19,9Total income all sources,35056,,5.6,25410,,4.7
+T4,2013,13,10,0wages and salaries,28116,,4.8,10559,*,25.5
+T4,2013,13,11,1self-employment,4641,*,21.8,0,,
+T4,2013,13,12,2investments,1990,,19.1,0,,
+T4,2013,13,13,3private superannuation,415,*,23.8,0,,
+T4,2013,13,14,4New Zealand Superannuation and war pensions,2662,,3.3,0,,
+T4,2013,13,15,5Other government benefits,2114,,9.8,0,,
+T4,2013,13,16,6Other regular sources,1015,*,26.7,0,,
+T4,2013,13,17,7Total regular and recurring income,40954,,3.7,31286,,4.8
+T4,2013,13,18,8Total irregular Income,1104,**,65.5,0,,
+T4,2013,13,19,9Total income all sources,42058,,4.2,31483,,5.3
+T3,2014,11,10,0wages and salaries,57697,,3.9,49800,,4.2
+T3,2014,11,11,1self-employment,55159,,12.6,40000,,11.2
+T3,2014,11,12,2investments,7497,*,24.4,1119,*,29.1
+T3,2014,11,13,3private superannuation,24233,,19.8,18795,,10.8
+T3,2014,11,14,4New Zealand Superannuation and war pensions,16106,,2.6,16298,,0.3
+T3,2014,11,15,5Other government benefits,8154,,8.3,6970,,13.4
+T3,2014,11,16,6Other regular sources,13999,*,26,3946,*,35.1
+T3,2014,11,17,7Total regular and recurring income,55072,,3.5,44739,,4.1
+T3,2014,11,18,8Total irregular Income,34607,**,56.6,6245,*,29.9
+T3,2014,11,19,9Total income all sources,56608,,4,45000,,3.6
+T3,2014,12,10,0wages and salaries,38260,,4.3,35457,,4.5
+T3,2014,12,11,1self-employment,33924,,18.8,23464,,12.1
+T3,2014,12,12,2investments,6488,,20.4,1200,,19.5
+T3,2014,12,13,3private superannuation,14776,*,35.4,10643,*,27.1
+T3,2014,12,14,4New Zealand Superannuation and war pensions,17579,,2.2,16302,,0.9
+T3,2014,12,15,5Other government benefits,10373,,7.2,7410,,10
+T3,2014,12,16,6Other regular sources,14777,*,29.6,3000,*,30.7
+T3,2014,12,17,7Total regular and recurring income,36468,,4,28171,,5.7
+T3,2014,12,18,8Total irregular Income,33754,*,41.8,4250,**,50.1
+T3,2014,12,19,9Total income all sources,37944,,4.2,28602,,5.2
+T3,2014,13,10,0wages and salaries,48123,,3.2,42138,,3.6
+T3,2014,13,11,1self-employment,47742,,10.8,33366,,10.2
+T3,2014,13,12,2investments,6982,,19,1187,,19.5
+T3,2014,13,13,3private superannuation,20750,,17.9,15588,,14.8
+T3,2014,13,14,4New Zealand Superannuation and war pensions,16901,,1.9,16298,,0.1
+T3,2014,13,15,5Other government benefits,9616,,6.1,7280,,8.8
+T3,2014,13,16,6Other regular sources,14445,,20.1,3192,*,31.9
+T3,2014,13,17,7Total regular and recurring income,45538,,2.9,35457,,4.5
+T3,2014,13,18,8Total irregular Income,34173,*,36.2,5000,*,35.5
+T3,2014,13,19,9Total income all sources,47040,,3.2,35742,,4.8
+T4,2014,11,10,0wages and salaries,34611,,5.2,20336,*,29.4
+T4,2014,11,11,1self-employment,8406,,15.9,0,,
+T4,2014,11,12,2investments,2241,*,24.8,0,,
+T4,2014,11,13,3private superannuation,702,*,27.6,0,,
+T4,2014,11,14,4New Zealand Superannuation and war pensions,2565,,4.4,0,,
+T4,2014,11,15,5Other government benefits,1172,,13.7,0,,
+T4,2014,11,16,6Other regular sources,1524,*,28.1,0,,
+T4,2014,11,17,7Total regular and recurring income,51220,,3.6,41419,,5.1
+T4,2014,11,18,8Total irregular Income,1521,**,56.9,0,,
+T4,2014,11,19,9Total income all sources,52742,,4.1,41714,,5.1
+T4,2014,12,10,0wages and salaries,20835,,5.3,4171,**,61.7
+T4,2014,12,11,1self-employment,2595,*,23.6,0,,
+T4,2014,12,12,2investments,1896,,20.2,0,,
+T4,2014,12,13,3private superannuation,233,*,47,0,,
+T4,2014,12,14,4New Zealand Superannuation and war pensions,3071,,3.1,0,,
+T4,2014,12,15,5Other government benefits,2695,,9.2,0,,
+T4,2014,12,16,6Other regular sources,2018,*,31.1,0,,
+T4,2014,12,17,7Total regular and recurring income,33343,,4.1,25000,,5.7
+T4,2014,12,18,8Total irregular Income,1442,*,41.2,0,,
+T4,2014,12,19,9Total income all sources,34785,,4.4,25277,,5.4
+T4,2014,13,10,0wages and salaries,27492,,4,9495,*,26.6
+T4,2014,13,11,1self-employment,5403,,13.7,0,,
+T4,2014,13,12,2investments,2063,,19.5,0,,
+T4,2014,13,13,3private superannuation,460,*,22.9,0,,
+T4,2014,13,14,4New Zealand Superannuation and war pensions,2826,,3,0,,
+T4,2014,13,15,5Other government benefits,1959,,7.8,0,,
+T4,2014,13,16,6Other regular sources,1779,*,21.1,0,,
+T4,2014,13,17,7Total regular and recurring income,41983,,3,31750,,5
+T4,2014,13,18,8Total irregular Income,1480,*,35.8,0,,
+T4,2014,13,19,9Total income all sources,43463,,3.3,32272,,5.1
+T3,2015,11,10,0wages and salaries,57917,,4,50000,,3.5
+T3,2015,11,11,1self-employment,58808,,16,41373,,11.3
+T3,2015,11,12,2investments,7099,,17.3,800,*,23.5
+T3,2015,11,13,3private superannuation,27993,,18.9,21709,,9.8
+T3,2015,11,14,4New Zealand Superannuation and war pensions,16839,,1.7,16688,,0.3
+T3,2015,11,15,5Other government benefits,8032,,7.7,6500,,10.3
+T3,2015,11,16,6Other regular sources,19827,*,40.1,3000,*,26.6
+T3,2015,11,17,7Total regular and recurring income,57439,,4.5,44630,,3.4
+T3,2015,11,18,8Total irregular Income,30829,*,38.7,4871,*,32.1
+T3,2015,11,19,9Total income all sources,58815,,4.6,45000,,3.3
+T3,2015,12,10,0wages and salaries,39941,,4,35000,,3.9
+T3,2015,12,11,1self-employment,35251,*,22.1,20857,,18.7
+T3,2015,12,12,2investments,6241,,20,805,,18.6
+T3,2015,12,13,3private superannuation,17274,*,26.6,11624,*,23.5
+T3,2015,12,14,4New Zealand Superannuation and war pensions,17906,,2,16865,,0.9
+T3,2015,12,15,5Other government benefits,9862,,6.9,7000,,10.4
+T3,2015,12,16,6Other regular sources,9974,,19.6,2653,*,21.1
+T3,2015,12,17,7Total regular and recurring income,37998,,3.4,29477,,3.4
+T3,2015,12,18,8Total irregular Income,38390,*,43.2,4109,*,40.1
+T3,2015,12,19,9Total income all sources,39798,,4.3,29710,,3.5
+T3,2015,13,10,0wages and salaries,48976,,3,42000,,2.3
+T3,2015,13,11,1self-employment,50549,,14,31500,,13.9
+T3,2015,13,12,2investments,6667,,14.2,800,,18.7
+T3,2015,13,13,3private superannuation,24104,,15.8,17861,,11
+T3,2015,13,14,4New Zealand Superannuation and war pensions,17414,,1.5,16703,,0.1
+T3,2015,13,15,5Other government benefits,9203,,5.5,6786,,7.6
+T3,2015,13,16,6Other regular sources,14508,*,27.6,2748,,17.5
+T3,2015,13,17,7Total regular and recurring income,47525,,3.3,36000,,2.9
+T3,2015,13,18,8Total irregular Income,34722,*,30.9,4725,*,31.7
+T3,2015,13,19,9Total income all sources,49112,,3.7,36500,,3.2
+T4,2015,11,10,0wages and salaries,35547,,4.8,22714,,17.2
+T4,2015,11,11,1self-employment,8545,,18.7,0,,
+T4,2015,11,12,2investments,2440,,18.2,0,,
+T4,2015,11,13,3private superannuation,675,*,27.2,0,,
+T4,2015,11,14,4New Zealand Superannuation and war pensions,2777,,2.4,0,,
+T4,2015,11,15,5Other government benefits,1188,,11.8,0,,
+T4,2015,11,16,6Other regular sources,2523,*,42.6,0,,
+T4,2015,11,17,7Total regular and recurring income,53696,,4.4,41866,,3.5
+T4,2015,11,18,8Total irregular Income,1428,*,43.4,0,,
+T4,2015,11,19,9Total income all sources,55125,,4.6,42100,,3.5
+T4,2015,12,10,0wages and salaries,22833,,4.9,7300,*,26.6
+T4,2015,12,11,1self-employment,2602,*,24,0,,
+T4,2015,12,12,2investments,2051,,20.9,0,,
+T4,2015,12,13,3private superannuation,223,*,33.3,0,,
+T4,2015,12,14,4New Zealand Superannuation and war pensions,3242,,2.2,0,,
+T4,2015,12,15,5Other government benefits,2437,,8.5,0,,
+T4,2015,12,16,6Other regular sources,1401,,20.9,0,,
+T4,2015,12,17,7Total regular and recurring income,34790,,3.5,26171,,4.4
+T4,2015,12,18,8Total irregular Income,1777,*,44.4,0,,
+T4,2015,12,19,9Total income all sources,36567,,4.5,26694,,4.6
+T4,2015,13,10,0wages and salaries,28997,,3.5,12214,,15.8
+T4,2015,13,11,1self-employment,5484,,16.1,0,,
+T4,2015,13,12,2investments,2239,,14.9,0,,
+T4,2015,13,13,3private superannuation,442,*,22.2,0,,
+T4,2015,13,14,4New Zealand Superannuation and war pensions,3017,,1.8,0,,
+T4,2015,13,15,5Other government benefits,1832,,7.3,0,,
+T4,2015,13,16,6Other regular sources,1945,*,29.5,0,,
+T4,2015,13,17,7Total regular and recurring income,43956,,3.2,32527,,3.5
+T4,2015,13,18,8Total irregular Income,1608,*,32.5,0,,
+T4,2015,13,19,9Total income all sources,45564,,3.7,32978,,3.5
+T3,2016,11,10,0wages and salaries,59608,,5,51000,,3.9
+T3,2016,11,11,1self-employment,64959,,14.7,42397,,12.2
+T3,2016,11,12,2investments,8379,,20.7,1249,*,22.9
+T3,2016,11,13,3private superannuation,24685,*,27.9,17986,*,21.2
+T3,2016,11,14,4New Zealand Superannuation and war pensions,17836,,2,17013,,2.9
+T3,2016,11,15,5Other government benefits,8073,,9.8,6842,,16.4
+T3,2016,11,16,6Other regular sources,9861,*,21.5,2500,*,36.3
+T3,2016,11,17,7Total regular and recurring income,56488,,5.6,44306,,4.7
+T3,2016,11,18,8Total irregular Income,37556,*,36.8,6245,**,50.8
+T3,2016,11,19,9Total income all sources,57883,,5.7,44626,,5.1
+T3,2016,12,10,0wages and salaries,39781,,3.6,35455,,4.7
+T3,2016,12,11,1self-employment,41882,,16.6,25000,,13.5
+T3,2016,12,12,2investments,6811,*,28.3,1249,*,22.5
+T3,2016,12,13,3private superannuation,15829,*,37.8,13489,*,26.9
+T3,2016,12,14,4New Zealand Superannuation and war pensions,19230,,1.9,17534,,10.1
+T3,2016,12,15,5Other government benefits,10117,,7.1,7560,,8
+T3,2016,12,16,6Other regular sources,9608,*,26.6,2186,,10
+T3,2016,12,17,7Total regular and recurring income,37886,,3.8,28854,,4.5
+T3,2016,12,18,8Total irregular Income,45669,***,102.3,6245,*,22.6
+T3,2016,12,19,9Total income all sources,39360,,5.2,29210,,4.2
+T3,2016,13,10,0wages and salaries,49694,,3.4,42963,,3.8
+T3,2016,13,11,1self-employment,56106,,13.3,35000,,11.2
+T3,2016,13,12,2investments,7582,,18.6,1249,,20.8
+T3,2016,13,13,3private superannuation,21701,*,23.2,16506,*,21.6
+T3,2016,13,14,4New Zealand Superannuation and war pensions,18582,,1.4,17013,,2.8
+T3,2016,13,15,5Other government benefits,9360,,6,7280,,9.3
+T3,2016,13,16,6Other regular sources,9731,,18.6,2281,*,24.3
+T3,2016,13,17,7Total regular and recurring income,47056,,4.1,35445,,4
+T3,2016,13,18,8Total irregular Income,41444,**,56,6245,**,50.4
+T3,2016,13,19,9Total income all sources,48484,,4.6,35757,,4
+T4,2016,11,10,0wages and salaries,33443,,6.5,11627,*,34.9
+T4,2016,11,11,1self-employment,10800,,15.7,0,,
+T4,2016,11,12,2investments,2209,*,21.9,0,,
+T4,2016,11,13,3private superannuation,569,*,33.8,0,,
+T4,2016,11,14,4New Zealand Superannuation and war pensions,2941,,2.8,0,,
+T4,2016,11,15,5Other government benefits,1091,,16.2,0,,
+T4,2016,11,16,6Other regular sources,1539,*,24.8,0,,
+T4,2016,11,17,7Total regular and recurring income,52592,,5.9,40018,,5.2
+T4,2016,11,18,8Total irregular Income,1350,*,41,0,,
+T4,2016,11,19,9Total income all sources,53942,,6,40726,,5.4
+T4,2016,12,10,0wages and salaries,21121,,4.9,3256,**,69
+T4,2016,12,11,1self-employment,4101,*,21.9,0,,
+T4,2016,12,12,2investments,1758,*,28.8,0,,
+T4,2016,12,13,3private superannuation,175,*,41,0,,
+T4,2016,12,14,4New Zealand Superannuation and war pensions,3458,,2.6,0,,
+T4,2016,12,15,5Other government benefits,2202,,9.7,0,,
+T4,2016,12,16,6Other regular sources,1509,*,29.1,0,,
+T4,2016,12,17,7Total regular and recurring income,34323,,4.2,25759,,4.3
+T4,2016,12,18,8Total irregular Income,1430,***,108.9,0,,
+T4,2016,12,19,9Total income all sources,35753,,5.1,26070,,4.3
+T4,2016,13,10,0wages and salaries,27111,,4.6,6499,*,40.3
+T4,2016,13,11,1self-employment,7358,,14.9,0,,
+T4,2016,13,12,2investments,1977,,19.6,0,,
+T4,2016,13,13,3private superannuation,367,*,27.1,0,,
+T4,2016,13,14,4New Zealand Superannuation and war pensions,3206,,1.9,0,,
+T4,2016,13,15,5Other government benefits,1662,,9.4,0,,
+T4,2016,13,16,6Other regular sources,1524,*,21.1,0,,
+T4,2016,13,17,7Total regular and recurring income,43205,,4.4,31284,,4.2
+T4,2016,13,18,8Total irregular Income,1391,**,60.6,0,,
+T4,2016,13,19,9Total income all sources,44596,,4.8,31585,,4.7
+T3,2017,11,10,0wages and salaries,59223,,4.1,51500,,3.3
+T3,2017,11,11,1self-employment,68281,,15.1,47000,,7
+T3,2017,11,12,2investments,10618,*,38.1,1500,*,31.7
+T3,2017,11,13,3private superannuation,25581,*,26.9,19484,*,26.2
+T3,2017,11,14,4New Zealand Superannuation and war pensions,18116,,2.1,17505,,2.3
+T3,2017,11,15,5Other government benefits,9040,,8.6,7962,,13.2
+T3,2017,11,16,6Other regular sources,11251,*,26.8,3123,*,24.7
+T3,2017,11,17,7Total regular and recurring income,58925,,5.1,47174,,3.8
+T3,2017,11,18,8Total irregular Income,30793,*,44.8,4996,*,27.3
+T3,2017,11,19,9Total income all sources,59613,,5.3,47200,,3.9
+T3,2017,12,10,0wages and salaries,42872,,5.4,37958,,4.1
+T3,2017,12,11,1self-employment,42460,,16.2,28756,,17.3
+T3,2017,12,12,2investments,7919,,17.6,1561,*,27.5
+T3,2017,12,13,3private superannuation,18024,*,27.8,15000,,18.3
+T3,2017,12,14,4New Zealand Superannuation and war pensions,19248,,2.1,17769,,0.7
+T3,2017,12,15,5Other government benefits,11307,,7,8609,,8.5
+T3,2017,12,16,6Other regular sources,10981,*,33.6,2186,,10.7
+T3,2017,12,17,7Total regular and recurring income,40303,,4.7,31002,,5.3
+T3,2017,12,18,8Total irregular Income,66966,**,73.7,7000,*,38.9
+T3,2017,12,19,9Total income all sources,42404,,5.5,31365,,4.7
+T3,2017,13,10,0wages and salaries,51094,,3.3,45000,,3.2
+T3,2017,13,11,1self-employment,58774,,12.6,40000,,8.8
+T3,2017,13,12,2investments,9295,*,24.4,1561,*,24.3
+T3,2017,13,13,3private superannuation,23040,*,21.3,17251,*,21.2
+T3,2017,13,14,4New Zealand Superannuation and war pensions,18722,,1.6,17505,,2.2
+T3,2017,13,15,5Other government benefits,10527,,5.4,8447,,6.5
+T3,2017,13,16,6Other regular sources,11108,*,21.6,2498,,19.3
+T3,2017,13,17,7Total regular and recurring income,49475,,3.8,38108,,4
+T3,2017,13,18,8Total irregular Income,51298,**,56.1,6245,*,22.7
+T3,2017,13,19,9Total income all sources,50880,,4.1,38282,,3.5
+T4,2017,11,10,0wages and salaries,33705,,5.3,12889,*,37.1
+T4,2017,11,11,1self-employment,12259,,15.8,0,,
+T4,2017,11,12,2investments,2753,*,39.3,0,,
+T4,2017,11,13,3private superannuation,623,*,37.2,0,,
+T4,2017,11,14,4New Zealand Superannuation and war pensions,3051,,3,0,,
+T4,2017,11,15,5Other government benefits,1069,,15.7,0,,
+T4,2017,11,16,6Other regular sources,1630,*,30.9,0,,
+T4,2017,11,17,7Total regular and recurring income,55090,,5,43798,,5.1
+T4,2017,11,18,8Total irregular Income,735,**,50.6,0,,
+T4,2017,11,19,9Total income all sources,55824,,5.3,43852,,4.7
+T4,2017,12,10,0wages and salaries,22900,,6.1,3828,**,62.5
+T4,2017,12,11,1self-employment,4217,,18.6,0,,
+T4,2017,12,12,2investments,1874,,18.7,0,,
+T4,2017,12,13,3private superannuation,211,*,45.2,0,,
+T4,2017,12,14,4New Zealand Superannuation and war pensions,3538,,3,0,,
+T4,2017,12,15,5Other government benefits,2419,,9.9,0,,
+T4,2017,12,16,6Other regular sources,1690,*,35.3,0,,
+T4,2017,12,17,7Total regular and recurring income,36850,,4.8,27208,,4.8
+T4,2017,12,18,8Total irregular Income,1984,**,81.8,0,,
+T4,2017,12,19,9Total income all sources,38834,,5.6,27983,,4.7
+T4,2017,13,10,0wages and salaries,28162,,4.2,7379,*,32.6
+T4,2017,13,11,1self-employment,8133,,13.4,0,,
+T4,2017,13,12,2investments,2302,*,25.4,0,,
+T4,2017,13,13,3private superannuation,411,*,31.1,0,,
+T4,2017,13,14,4New Zealand Superannuation and war pensions,3301,,2.2,0,,
+T4,2017,13,15,5Other government benefits,1762,,8.9,0,,
+T4,2017,13,16,6Other regular sources,1661,*,24.4,0,,
+T4,2017,13,17,7Total regular and recurring income,45732,,3.9,34412,,4.6
+T4,2017,13,18,8Total irregular Income,1376,**,61.9,0,,
+T4,2017,13,19,9Total income all sources,47108,,4.1,34917,,4.4

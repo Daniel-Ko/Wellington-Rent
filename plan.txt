@@ -1,0 +1,25 @@
+WHICH DATASET?
+
+Territorial Authority aka Regional Council
+
+http://www.mbie.govt.nz/info-services/housing-property/sector-information-and-statistics/rental-bond-data
+
+https://property.trademe.co.nz/market-insights/?tag=Rental+Price+Index
+
+https://www.educationcounts.govt.nz/statistics/tertiary-education/summary_tables
+
+http://affordability.org.nz/about.html
+
+https://www.tenancy.govt.nz/rent-bond-and-bills/market-rent/difference-between-mbie-and-trade-me-rental-figures/
+
+https://www.massey.ac.nz/massey/fms/Colleges/College%20of%20Business/School%20of%20Economics%20&%20Finance/research-outputs/mureau/nz-residential-rental/June%202017%20Pub.pdf?6C425EB2CADEFCDCE91211D32E57DECA
+
+https://www.stats.govt.nz/assets/Uploads/Reports/Comparing-housing-information-from-census-and-tenancy-bond-data/comparing-housing-information-from-census-and-tenancy-bond-data.pdf 
+geometric mean - make sure no neg/zeroes. Roots first then product second
+
+Is data lognormal?
+---------------------
+apply log to data, is curve gaussian? Then data is log-normal
+OR
+is mean-min is similar to max-mean, data might be normal
+but if mean/min and max/mean is similar, data might be lognormal and skewed down
