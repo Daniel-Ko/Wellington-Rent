@@ -1,50 +1,63 @@
 import pandas as pd
 import numpy as np
-from scipy.stats.mstats import gmean
-import matplotlib.pyplot as plt
 
-plots = []
-filtered_csvs = []
+from data_reading import csv_reading as reader
 
-rentdf = pd.read_csv(".\\data\\ta-geometric-mean.csv")
-regiondf = pd.read_csv(".\\data\\region-geometric-mean-rents.csv")
+DF_DICT = {}
 
 
-def csv_by_TA(rentdf):
-    cleaned_rdf = rentdf[rentdf['Month'].notnull()
-                         & rentdf['Wellington'].notnull()
-                         & rentdf['Auckland'].notnull()]
+def main():
 
-    cleaned_rdf['Month'] = pd.to_datetime(rentdf['Month'])
-    # last14years_mask = (cleaned_rdf['Month'] > '2006-01-01') & (cleaned_rdf['Month'] <= '2018-08-14')
+    DF_DICT['TA-rent'] = reader.ta_process(
+        reader.df_clean(
+            df=reader.df_setup(
+                csv=".\\data\\ta-geometric-mean.csv",
+                date_index='Month'
+            ),
+            filter_cols=reader.TA_FILTERS
+        ))
 
-    cleaned_rdf.set_index(['Month'], inplace=True)
+    DF_DICT['REG-rent'] = reader.df_clean(
+        df=reader.df_setup(
+            csv=".\\data\\region-geometric-mean-rents.csv",
+            date_index='Month'),
+        filter_cols=reader.REG_FILTERS
+    )
 
-    ax = cleaned_rdf.plot(
-        y=['Wellington', 'Auckland', 'Lower Hutt', 'Upper Hutt'])
+    DF_DICT['VIC-enroll'], DF_DICT['VIC-efts'], DF_DICT['VIC-comp'] = reader.vicsumm_process(
+        reader.df_setup(
+            csv=".\\data\\tertiary_summaries_08-16.csv",
+            date_index='Year'
+        )
+    )
 
-    ax.set_xlim(pd.Timestamp('2006-01-01'), pd.Timestamp('2018-08-14'))
+    DF_DICT['HOUSING'] = reader.df_clean(
+        df=reader.df_setup(
+            csv=".\\data\\region-geometric-mean-rents.csv",
+            date_index='Month'),
+        filter_cols=[]
+    )
 
-    plots.append(ax)
+    # Group by year
+    DF_DICT['REG-rent'] = reader.yearsum(DF_DICT['REG-rent'], 'Year')
+    DF_DICT['TA-rent'] = reader.yearsum(DF_DICT['TA-rent'], 'Year')
 
-def csv_by_Region(rentdf):
-    cleaned_rdf = rentdf[rentdf['Month'].notnull()
-                         & rentdf['Wellington'].notnull()
-                         & rentdf['Auckland'].notnull()]
+    # Merge TA+Reg
+    comb_df = merge(DF_DICT['REG-rent'], DF_DICT['TA-rent'], on='Year')
 
-    cleaned_rdf['Month'] = pd.to_datetime(rentdf['Month'])
-    # last14years_mask = (cleaned_rdf['Month'] > '2006-01-01') & (cleaned_rdf['Month'] <= '2018-08-14')
+    print(comb_df)
 
-    cleaned_rdf.set_index(['Month'], inplace=True)
+    # Concat
+    comb_df = pd.concat(
+        [comb_df, DF_DICT['VIC-enroll'], DF_DICT['VIC-efts'], DF_DICT['VIC-comp'], DF_DICT['HOUSING']], axis='columns')
 
-    ax = cleaned_rdf.plot(
-        y=['Wellington', 'Auckland'])
+    # print(comb_df)
 
-    ax.set_xlim(pd.Timestamp('2006-01-01'), pd.Timestamp('2018-08-14'))
 
-    plots.append(ax)
-    
+def merge(df1, df2, on):
+    unique_cols = df1.columns.difference(df2.columns)
+    return pd.merge(df1[unique_cols], df2, on=on, how='outer', suffixes=('_x', ''))
 
-csv_by_TA(rentdf)
-csv_by_Region(regiondf)
 
+if __name__ == "__main__":
+    main()
