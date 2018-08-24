@@ -33,7 +33,7 @@ def main():
 
     DF_DICT['HOUSING'] = reader.df_clean(
         df=reader.df_setup(
-            csv=".\\data\\region-geometric-mean-rents.csv",
+            csv=".\\data\\Housing.csv",
             date_index='Month'),
         filter_cols=[]
     )
@@ -41,6 +41,7 @@ def main():
     # Group by year
     DF_DICT['REG-rent'] = reader.yearsum(DF_DICT['REG-rent'], 'Year')
     DF_DICT['TA-rent'] = reader.yearsum(DF_DICT['TA-rent'], 'Year')
+    DF_DICT['HOUSING'] = reader.yearsum(DF_DICT['HOUSING'], 'Year')
 
     # Merge TA+Reg
     comb_df = merge(DF_DICT['REG-rent'], DF_DICT['TA-rent'], on='Year')
