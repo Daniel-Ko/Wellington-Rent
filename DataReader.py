@@ -45,13 +45,11 @@ def main():
     # Merge TA+Reg
     comb_df = merge(DF_DICT['REG-rent'], DF_DICT['TA-rent'], on='Year')
 
-    print(comb_df)
-
     # Concat
     comb_df = pd.concat(
         [comb_df, DF_DICT['VIC-enroll'], DF_DICT['VIC-efts'], DF_DICT['VIC-comp'], DF_DICT['HOUSING']], axis='columns')
 
-    # print(comb_df)
+    print(comb_df)
 
 
 def merge(df1, df2, on):
