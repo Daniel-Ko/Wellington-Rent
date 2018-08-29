@@ -30,37 +30,19 @@ def main():
     scaled_feat_plot = plot_standardised_data(df[sig_feats_names], pipeline)
 
     # Finally, plot regression
-    predicted_prices = pd.DataFrame(predicted, columns=["Predicted Yearly Rent Price"])
-    predicted_prices["Year"] = df.index
-    # predicted_prices["Year"] = pd.to_datetime(predicted_prices["Year"])
-    # predicted_prices.set_index(["Year"], inplace=True)
-    predicted_prices["YearStr"] = predicted_prices["Year"].dt.strftime("%Y-%b-%d")
-    predicted_prices["yearfloat"] = dates.datestr2num(predicted_prices["YearStr"])
-
-    fig, ax = plt.subplots()
-    g = sns.regplot(
-        x="yearfloat",
-        y="Predicted Yearly Rent Price",
-        data=predicted_prices,
-        fit_reg=True,
-        scatter=True,
-        label="Price pa.",
-        ax=ax,
-    )
-    ax.xaxis.set_major_formatter(date_display_from_float)
-    ax.tick_params(labelrotation=45)
+    regplot = plot_regression(df, predicted)
     # xticks = ax.get_xticks()
     # ax.set_xticklabels([pd.to_datetime(tick).strftime("%Y") for tick in xticks])
 
     # ticks = [
     #     pd.to_datetime(tick).strftime("%Y") for tick in predicted_prices["yearstr"]
     # ]
-    # g.map(plt.plot, "yearfloat", "Predicted Yearly Rent Price", marker="o")
+
     # g.set(xticks=ticks)
     # for price in predicted_prices.loc[:, "Predicted Yearly Rent Price"]:
     #     print(price / 12)
 
-    sns.residplot(x="yearfloat", y="Predicted Yearly Rent Price", data=predicted_prices)
+    sns.residplot(x="Year", y="Predicted Yearly Rent Price", data=predicted_prices)
     plt.show()
 
 
@@ -101,9 +83,38 @@ def plot_standardised_data(df, pipeline):
     return scaled_feat_plot
 
 
+def plot_regression(df, predicted):
+    predicted_prices = pd.DataFrame(predicted, columns=["Predicted Yearly Rent Price"])
+    predicted_prices["Year"] = df.index
+
+    predicted_prices["YearStr"] = predicted_prices["Year"].dt.strftime("%Y-%b-%d")
+    predicted_prices["yearfloat"] = dates.datestr2num(predicted_prices["YearStr"])
+
+    fig, ax = plt.subplots()
+    g = sns.regplot(
+        x="yearfloat",
+        y="Predicted Yearly Rent Price",
+        data=predicted_prices,
+        fit_reg=True,
+        scatter=True,
+        label="Price pa.",
+        ax=ax,
+        # lowess=True,
+        robust=True,
+        truncate=False,
+        # marker='d'
+    )
+    ax.xaxis.set_major_formatter(date_display_from_float)
+    ax.tick_params(labelrotation=45)
+
+    plt.plot("yearfloat", "Predicted Yearly Rent Price", marker="d")
+
+    return ax
+
+
 @plt.FuncFormatter
 def date_display_from_float(datenum, pos):
-    return dates.num2date(datenum).strftime("%Y-%m-%d")
+    return dates.num2date(datenum).strftime("%Y")
 
 
 if __name__ == "__main__":
