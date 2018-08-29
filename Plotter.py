@@ -7,7 +7,7 @@ import statsmodels
 import patsy
 
 from sklearn.preprocessing import StandardScaler
-
+from sklearn.metrics import mean_squared_error
 import Preprocess
 import DataReader
 
@@ -17,7 +17,7 @@ def main():
     parser.add_argument("-r", "--add_region", action="store_true")
     parser.add_argument("-t", "--add_TA", action="store_true")
     args = parser.parse_args()
-    
+
     sns.set()
     sns.set_style("whitegrid")
 
@@ -33,7 +33,8 @@ def main():
     test_data = DataReader.get_test_data()["Wellington"]
     predicted = pipeline.fit(df, test_data).predict(df)
     score = pipeline.score(df, test_data)
-    print(f"SCORE: {score}")
+    print(f"R2 SCORE: {score}")
+    print(f"MSE: {mean_squared_error(test_data, predicted)}")
 
     # Plot significant features
     sig_feats_plot, sig_feats_names = plot_sigfeats(df.columns, pipeline)
@@ -47,9 +48,11 @@ def main():
     # And residuals to check the fit of the regression
     residplot = plot_reg_resid(predicted_prices, test_data)
 
-    for price in predicted_prices.loc[:, "Predicted Yearly Rent Price"]:
-        print(price / 12)
-
+    predicted_prices = predicted_prices.set_index(['Year'])
+    predicted_prices['Monthly'] = [(price / 12) for price in predicted_prices["Predicted Yearly Geometric Rent Price"]]
+    # for price in predicted_prices.loc[:, "Predicted Yearly Geometric Rent Price"]:
+    #     print(price / 12)
+    print(predicted_prices)
     plt.show()
 
 
@@ -58,6 +61,7 @@ def plot_sigfeats(columns, pipeline):
         "feat_select"
     ].estimator_.feature_importances_
 
+    # feat_importances = (feat_importances / feat_importances.max())
     feat_support = pipeline.named_steps["feat_select"].get_support()
 
     sig_feats = pd.DataFrame(
@@ -67,7 +71,7 @@ def plot_sigfeats(columns, pipeline):
     )
     sig_feats.loc["Importance score"] = feat_importances
 
-    ax = sig_feats.iloc[1].plot.bar(
+    ax = sig_feats.iloc[1].plot.barh(
         legend=False,
         y="Importance",
         x="Feature",
@@ -75,7 +79,7 @@ def plot_sigfeats(columns, pipeline):
         use_index=True,
         stacked=False,
     )
-    ax.set(ylabel="Explained Variance")
+    ax.set(xlabel="Explained Variance")
     ax.set_title("Feature importance")
 
     import_feat_mask = sig_feats.loc["Important feature?"] == 1.0
@@ -91,16 +95,18 @@ def plot_standardised_data(df, pipeline):
 
 
 def plot_regression(df, predicted):
-    predicted_prices = pd.DataFrame(predicted, columns=["Predicted Yearly Rent Price"])
+    predicted_prices = pd.DataFrame(
+        predicted, columns=["Predicted Yearly Geometric Rent Price"]
+    )
     predicted_prices["Year"] = df.index
-
+    
     predicted_prices["YearStr"] = predicted_prices["Year"].dt.strftime("%Y-%b-%d")
     predicted_prices["yearfloat"] = dates.datestr2num(predicted_prices["YearStr"])
 
     fig, ax = plt.subplots()
     g = sns.regplot(
         x="yearfloat",
-        y="Predicted Yearly Rent Price",
+        y="Predicted Yearly Geometric Rent Price",
         data=predicted_prices,
         fit_reg=True,
         scatter=True,
@@ -116,7 +122,7 @@ def plot_regression(df, predicted):
     )
     ax.xaxis.set_major_formatter(date_display_from_float)
     ax.tick_params(labelrotation=45)
-    ax.set(xlabel="Year", ylabel="Predicted Yearly Rent Price ($)")
+    ax.set(xlabel="Year", ylabel="Rent Price ($)", title = "Yearly Geometric Rent From Bond Prices")
 
     return (ax, predicted_prices)
 
@@ -125,16 +131,16 @@ def plot_reg_resid(predicted_prices, test_data):
     fig, ax = plt.subplots()
 
     predicted_prices["Residual"] = [
-        exp - actual
+        actual - exp
         for exp, actual in zip(
-            predicted_prices["Predicted Yearly Rent Price"], test_data
+            predicted_prices["Predicted Yearly Geometric Rent Price"], test_data
         )
     ]
     sns.residplot(x="yearfloat", y="Residual", data=predicted_prices)
 
     ax.xaxis.set_major_formatter(date_display_from_float)
     ax.tick_params(labelrotation=45)
-    ax.set(xlabel="Year")
+    ax.set(xlabel="Year", title="Residual of Rent Regression")
 
     return ax
 

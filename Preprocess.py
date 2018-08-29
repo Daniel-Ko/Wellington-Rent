@@ -18,7 +18,7 @@ def process(df):
             (
                 "regressor",
                 # ElasticNetCV(cv=len(df.index), max_iter=1000, normalize=False),
-                LassoCV(cv=len(df.index), max_iter=1000, normalize=False),
+                LassoCV(cv=len(df.index), max_iter=3000, normalize=False),
             ),
         ],
     )
