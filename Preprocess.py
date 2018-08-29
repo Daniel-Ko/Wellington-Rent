@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from sklearn import feature_selection as ftselect, cross_validation as cvalid
+from sklearn import feature_selection as ftselect
 from sklearn.model_selection import KFold
 from sklearn.pipeline import Pipeline, FeatureUnion
 from sklearn.preprocessing import StandardScaler
@@ -12,7 +12,6 @@ from sklearn.ensemble import (
     RandomForestRegressor,
 )
 from sklearn.linear_model import ElasticNetCV
-from sklearn.grid_search import GridSearchCV
 
 # DecisionTreeRegressor
 import DataReader
@@ -26,29 +25,13 @@ def process(df):
         memory=None,
         steps=[
             ("standardize", StandardScaler()),
-            (
-                "feat_select",
-                ftselect.SelectFromModel(RandomForestRegressor())
-                # ftselect.SelectKBest(k=5),
-            ),
+            ("feat_select", ftselect.SelectFromModel(RandomForestRegressor())),
             (
                 "regressor",
                 ElasticNetCV(cv=len(df.index), max_iter=1000, normalize=False),
             ),  # AdaBoostRegressor()
         ],
     )
-
-    # scores = cvalid.cross_val_score(
-    #     pipeline,
-    #     df,
-    #     df["Wellington"],
-    #     verbose=1,
-    #     scoring="r2",
-    #     # cv=KFold(n_splits=KFOLDS),
-    # )
-
-    # print(scores)
-    # print("Accuracy: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
 
     return pipeline
 

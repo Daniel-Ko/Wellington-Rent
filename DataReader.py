@@ -98,9 +98,9 @@ def create_combined_df():
         axis="columns",
     )
 
-    # Only keep columns with all observations
-    comb_df.dropna(inplace=True)
-
+    # Only keep columns with more than 5 missing values
+    comb_df = comb_df.dropna(thresh=5)
+    comb_df = comb_df.interpolate(limit_direction="both")
     return comb_df
 
 
