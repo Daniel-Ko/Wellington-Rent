@@ -14,17 +14,17 @@ import DataReader
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("-r", '--add_region', action='store_true')
-    parser.add_argument("-t", '--add_TA', action='store_true')
+    parser.add_argument("-r", "--add_region", action="store_true")
+    parser.add_argument("-t", "--add_TA", action="store_true")
     args = parser.parse_args()
-
+    
     sns.set()
     sns.set_style("whitegrid")
 
     sns.despine()
 
     df = DataReader.create_combined_df(args.add_region, args.add_TA)
-    
+
     pipeline = Preprocess.process(df)
     # regressor = pipeline.named_steps["regressor"]
     # print(regressor.mse_path_)
@@ -45,7 +45,7 @@ def main():
     regplot, predicted_prices = plot_regression(df, predicted)
 
     # And residuals to check the fit of the regression
-    residplot = plot_reg_resid(predicted_prices)
+    residplot = plot_reg_resid(predicted_prices, test_data)
 
     for price in predicted_prices.loc[:, "Predicted Yearly Rent Price"]:
         print(price / 12)
@@ -121,9 +121,16 @@ def plot_regression(df, predicted):
     return (ax, predicted_prices)
 
 
-def plot_reg_resid(predicted_prices):
+def plot_reg_resid(predicted_prices, test_data):
     fig, ax = plt.subplots()
-    sns.residplot(x="yearfloat", y="Predicted Yearly Rent Price", data=predicted_prices)
+
+    predicted_prices["Residual"] = [
+        exp - actual
+        for exp, actual in zip(
+            predicted_prices["Predicted Yearly Rent Price"], test_data
+        )
+    ]
+    sns.residplot(x="yearfloat", y="Residual", data=predicted_prices)
 
     ax.xaxis.set_major_formatter(date_display_from_float)
     ax.tick_params(labelrotation=45)
