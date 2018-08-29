@@ -1,9 +1,26 @@
 import pandas as pd
 
-TA_FILTERS = ['Wellington', 'Auckland', 'Lower Hutt', 'Upper Hutt',
-              'Porirua', 'Kapiti Coast District', 'National Total']
+TA_FILTERS = [
+    "Wellington",
+    "Auckland",
+    "Lower Hutt",
+    "Upper Hutt",
+    "Porirua",
+    "Kapiti Coast District",
+    "National Total",
+]
 
-REG_FILTERS = ['Wellington', 'Auckland', 'National Total']
+TA_edit_FILTERS = [
+    "WellingtonTA",
+    "AucklandTA",
+    "Lower Hutt",
+    "Upper Hutt",
+    "Porirua",
+    "Kapiti Coast District",
+    "National Total",
+]
+
+REG_FILTERS = ["Wellington", "Auckland", "National Total"]
 
 
 def df_setup(csv, date_index):
@@ -23,17 +40,20 @@ def df_clean(df, filter_cols):
 
 def ta_process(ta_df):
     cleaned_tadf = ta_df.rename(
-        columns={'Wellington': 'WellingtonTA', 'Auckland': 'AucklandTA'})
+        columns={"Wellington": "WellingtonTA", "Auckland": "AucklandTA"}
+    )
     return cleaned_tadf
 
 
 def vicsumm_process(vic_summ_df):
-    return (vic_summ_df.iloc[:, 0:3],
-            vic_summ_df.iloc[:, 3:6],
-            vic_summ_df.iloc[:, 6:9])
+    return (
+        vic_summ_df.iloc[:, 0:3],
+        vic_summ_df.iloc[:, 3:6],
+        vic_summ_df.iloc[:, 6:9],
+    )
 
 
 def agg_by_year(monthly_df, date_index):
-    yearly_df = monthly_df.groupby(pd.Grouper(freq='Y')).sum()
+    yearly_df = monthly_df.groupby(pd.Grouper(freq="Y")).sum()
     yearly_df.index.rename(date_index, inplace=True)
     return yearly_df

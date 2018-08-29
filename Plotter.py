@@ -1,6 +1,11 @@
+import argparse
+
 import pandas as pd
 from matplotlib import pyplot as plt, dates, ticker
 import seaborn as sns
+import statsmodels
+import patsy
+
 from sklearn.preprocessing import StandardScaler
 
 import Preprocess
@@ -8,19 +13,26 @@ import DataReader
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-r", '--add_region', action='store_true')
+    parser.add_argument("-t", '--add_TA', action='store_true')
+    args = parser.parse_args()
+
     sns.set()
     sns.set_style("whitegrid")
 
     sns.despine()
 
-    df = DataReader.create_combined_df()
+    df = DataReader.create_combined_df(args.add_region, args.add_TA)
+    
     pipeline = Preprocess.process(df)
-    regressor = pipeline.named_steps["regressor"]
+    # regressor = pipeline.named_steps["regressor"]
     # print(regressor.mse_path_)
 
     # Score
-    predicted = pipeline.fit(df, df["Wellington"]).predict(df)
-    score = pipeline.score(df, df["Wellington"])
+    test_data = DataReader.get_test_data()["Wellington"]
+    predicted = pipeline.fit(df, test_data).predict(df)
+    score = pipeline.score(df, test_data)
     print(f"SCORE: {score}")
 
     # Plot significant features
@@ -30,19 +42,14 @@ def main():
     scaled_feat_plot = plot_standardised_data(df[sig_feats_names], pipeline)
 
     # Finally, plot regression
-    regplot = plot_regression(df, predicted)
-    # xticks = ax.get_xticks()
-    # ax.set_xticklabels([pd.to_datetime(tick).strftime("%Y") for tick in xticks])
+    regplot, predicted_prices = plot_regression(df, predicted)
 
-    # ticks = [
-    #     pd.to_datetime(tick).strftime("%Y") for tick in predicted_prices["yearstr"]
-    # ]
+    # And residuals to check the fit of the regression
+    residplot = plot_reg_resid(predicted_prices)
 
-    # g.set(xticks=ticks)
-    # for price in predicted_prices.loc[:, "Predicted Yearly Rent Price"]:
-    #     print(price / 12)
+    for price in predicted_prices.loc[:, "Predicted Yearly Rent Price"]:
+        print(price / 12)
 
-    sns.residplot(x="Year", y="Predicted Yearly Rent Price", data=predicted_prices)
     plt.show()
 
 
@@ -99,15 +106,28 @@ def plot_regression(df, predicted):
         scatter=True,
         label="Price pa.",
         ax=ax,
+        order=1,
         # lowess=True,
-        robust=True,
+        # robust=True,
         truncate=False,
         # marker='d'
+        scatter_kws={"color": "#31A1ED"},
+        line_kws={"color": "green"},
     )
     ax.xaxis.set_major_formatter(date_display_from_float)
     ax.tick_params(labelrotation=45)
+    ax.set(xlabel="Year", ylabel="Predicted Yearly Rent Price ($)")
 
-    plt.plot("yearfloat", "Predicted Yearly Rent Price", marker="d")
+    return (ax, predicted_prices)
+
+
+def plot_reg_resid(predicted_prices):
+    fig, ax = plt.subplots()
+    sns.residplot(x="yearfloat", y="Predicted Yearly Rent Price", data=predicted_prices)
+
+    ax.xaxis.set_major_formatter(date_display_from_float)
+    ax.tick_params(labelrotation=45)
+    ax.set(xlabel="Year")
 
     return ax
 

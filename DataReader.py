@@ -1,3 +1,5 @@
+import argparse
+
 import pandas as pd
 import numpy as np
 
@@ -7,7 +9,7 @@ DF_DICT = {}
 comb_df = pd.DataFrame()
 
 
-def create_combined_df():
+def create_combined_df(include_REG, include_TA):
     to_group_by_year = [
         "TA-rent",
         "REG-rent",
@@ -72,11 +74,6 @@ def create_combined_df():
     # Group by year
     for key in to_group_by_year:
         DF_DICT[key] = reader.agg_by_year(DF_DICT[key], "Year")
-    # DF_DICT['REG-rent'] = reader.agg_by_year(DF_DICT['REG-rent'], 'Year')
-    # DF_DICT['TA-rent'] = reader.agg_by_year(DF_DICT['TA-rent'], 'Year')
-    # DF_DICT['HOUSING'] = reader.agg_by_year(DF_DICT['HOUSING'], 'Year')
-    # DF_DICT['EMPLOYMENT'] = reader.agg_by_year(DF_DICT['EMPLOYMENT'], 'Year')
-    # DF_DICT['REAL_TWI'] = reader.agg_by_year(DF_DICT['REAL_TWI'], 'Year')
 
     # Merge TA+Reg
     comb_df = merge(DF_DICT["REG-rent"], DF_DICT["TA-rent"], on="Year")
@@ -101,6 +98,15 @@ def create_combined_df():
     # Only keep columns with more than 5 missing values
     comb_df = comb_df.dropna(thresh=5)
     comb_df = comb_df.interpolate(limit_direction="both")
+
+    if not include_REG:
+        DF_DICT["REG-rent"] = comb_df[["Wellington", "Auckland"]]
+        comb_df.drop(["Wellington", "Auckland"], 1, inplace=True)
+
+    if not include_TA:
+        DF_DICT["TA-rent"] = comb_df[reader.TA_edit_FILTERS]
+        comb_df.drop(reader.TA_edit_FILTERS, 1, inplace=True)
+
     return comb_df
 
 
@@ -118,5 +124,9 @@ def read_into_df(path, key, date_index, filter_col, sdary_process=None):
         DF_DICT[key] = sdary_process(DF_DICT[key])
 
 
+def get_test_data():
+    return DF_DICT["REG-rent"]
+
+
 if __name__ == "__main__":
-    create_combined_df()
+    create_combined_df(False, False)
